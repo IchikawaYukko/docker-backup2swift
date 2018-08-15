@@ -9,7 +9,7 @@ build:
 	docker build -t $(NAME):$(VERSION) .
 
 run:
-	docker run -it --rm \
+	docker run -i --rm \
 	--name $(CNTNAME) \
 	--net web \
 	--volumes-from data \
